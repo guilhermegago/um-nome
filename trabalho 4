@@ -15,3 +15,4 @@ contador = 1
 while contador <= 5:
     print(contador)
     contador += 1
+https://github.com/guilhermegago/um-nome/blob/c266258daafb4de27d3f8a1fab76ba2b50d6d4a7/python%20repeti%C3%A7%C3%A3o%20certo.pdf
