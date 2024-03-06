@@ -20,7 +20,7 @@ int main() {
     std::cout << "prazer meu nome è Guilherme" << std::endl;
     return 0;
 }
-https://github.com/vitovaliera/um-nome/blob/main/print%20c%2B%2B.png
+https://github.com/guilhermegago/um-nome/blob/627fa6e893bd1b1937dbdb41be1c093371a05ed1/print%20c%2B%2B.pdf
 
 b - Tente executar o seu código
 R: Python - print("prazer meu nome è Guilherme")
