@@ -1,7 +1,37 @@
-Acredito que você quis dizer "Python". Aqui estão algumas características-chave do Python, uma linguagem de programação de alto nível:
+1 - Explique as diferenças entre 3 linguagens de programação
+R: 3 linguagens de programação são: Python, PHP e C++
+Python: Versátil e usado em várias áreas, incluindo desenvolvimento web, automação, ciência de dados e aprendizado de máquina; Suporta programação orientada a objetos, funcional e procedural; Gerenciamento automático de memória com coleta de lixo; Sintaxe simples e legível; Grande comunidade, ativa em diversas áreas, com uma variedade de bibliotecas e frameworks; Desenvolvimento web, automação, aprendizado de máquina, ciência de dados.
 
-Legibilidade e simplicidade: Python é conhecido por sua sintaxe clara e legível, o que facilita a compreensão e escrita de código. Isso promove um desenvolvimento rápido e reduz a probabilidade de erros.
+PHP: Projetado especificamente para desenvolvimento web do lado do servidor, com foco em criar páginas dinâmicas; Principalmente usado de forma procedural, mas suporta programação orientada a objetos; Gerenciamento automático de memória; Sintaxe orientada a scripts com foco em desenvolvimento web; Comunidade forte no desenvolvimento web, com suporte extensivo em servidores web e frameworks; Desenvolvimento web do lado do servidor, criação de páginas dinâmicas.
 
-Multiparadigma: Python suporta diversos estilos de programação, incluindo programação orientada a objetos, programação imperativa e programação funcional. Isso oferece flexibilidade aos desenvolvedores para escolherem a abordagem que melhor se adapta às suas necessidades.
+C++: Linguagem de programação geral, com ênfase em desempenho, utilizada em sistemas embarcados, jogos e desenvolvimento de software de sistema; Suporta programação orientada a objetos e procedural, com destaque para desempenho; Requer gerenciamento manual de memória; Sintaxe mais complexa, especialmente em relação a manipulação de ponteiros e gerenciamento de memória; Comunidade robusta, especialmente em jogos, sistemas de baixo nível e desenvolvimento de software de sistema; Jogos, sistemas embarcados, software de sistema, aplicações de desempenho crítico.
 
-Interpretado e de alto nível: Python é uma linguagem interpretada, o que significa que o código é executado linha por linha em vez de ser compilado previamente. Além disso, é de alto nível, simplificando o desenvolvimento ao esconder detalhes de baixo nível do programador.
+a - Tente fazer um código mínimo em cada uma delas
+R: Python - print("prazer meu nome è Guilherme")
+
+PHP - <?php
+echo "prazer meu nome è Guilherme";
+?>
+https://github.com/vitovaliera/um-nome/blob/main/print%20php.png
+
+C++ - #include <iostream>
+
+int main() {
+    std::cout << "prazer meu nome è Guilherme" << std::endl;
+    return 0;
+}
+https://github.com/vitovaliera/um-nome/blob/main/print%20c%2B%2B.png
+
+b - Tente executar o seu código
+R: Python - print("prazer meu nome è Guilherme")
+
+PHP - <?php
+echo "prazer meu nome è Guilherme";
+?>
+
+C++ - #include <iostream>
+
+int main() {
+    std::cout << "prazer meu nome è Guilherme" << std::endl;
+    return 0;
+}
