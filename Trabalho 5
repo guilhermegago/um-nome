@@ -30,3 +30,4 @@ def imprimir_vogais(texto):
 # Exemplo de uso
 palavra_frase = "Olá, como você está hoje?"
 imprimir_vogais(palavra_frase)
+https://github.com/guilhermegago/um-nome/blob/efc8237e40413b8a812cbdc427e015778514cdcc/bubble%20sort%202.jpg
