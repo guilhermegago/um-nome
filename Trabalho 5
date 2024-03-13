@@ -13,3 +13,20 @@ def bubble_sort(arr):
 arr = [64, 34, 25, 12, 22, 11, 90]
 bubble_sort(arr)
 print("Array ordenado:", arr)
+https://github.com/guilhermegago/um-nome/blob/56cd3cb8539a92de7f922d956c5183c16cf59512/bubble%20sort.jpg
+
+ 2- implemente um algorítimo que imprima apenas as vogais de uma determinada palavra ou frase.
+
+def imprimir_vogais(texto):
+    vogais = "aeiouAEIOU"
+    resultado = ""
+
+    for char in texto:
+        if char in vogais:
+            resultado += char
+
+    print("Vogais na palavra/frase:", resultado)
+
+# Exemplo de uso
+palavra_frase = "Olá, como você está hoje?"
+imprimir_vogais(palavra_frase)
