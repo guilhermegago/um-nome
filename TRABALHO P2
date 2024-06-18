@@ -1,0 +1,98 @@
+# Dados fictícios de exemplo
+registro = [
+    {"nome": "Cliente A", "caso": 1, "receita": 1000, "despesa": 500},
+    {"nome": "Cliente B", "caso": 2, "receita": 1500, "despesa": 700},
+    {"nome": "Cliente A", "caso": 3, "receita": 800, "despesa": 300},
+    {"nome": "Cliente C", "caso": 4, "receita": 2000, "despesa": 1200},
+    # Adicione mais registros conforme necessário
+]
+
+def listar_clientes_por_nome(nome_parte):
+    clientes = set()
+    for entrada in registro:
+        if nome_parte.lower() in entrada["nome"].lower():
+            clientes.add(entrada["nome"])
+    print("Clientes encontrados:", clientes)
+
+def casos_por_cliente(nome_completo):
+    casos = []
+    for entrada in registro:
+        if entrada["nome"].lower() == nome_completo.lower():
+            casos.append(entrada["caso"])
+    print("Casos do cliente", nome_completo, ":", casos)
+
+def detalhes_caso(numero_caso):
+    for entrada in registro:
+        if entrada["caso"] == numero_caso:
+            receita_despesa = entrada["receita"] - entrada["despesa"]
+            print(f"Nome do cliente: {entrada['nome']}, Receita: {entrada['receita']}, Despesa: {entrada['despesa']}, Receita - Despesa: {receita_despesa}")
+
+def despesa_total():
+    total = sum(entrada["despesa"] for entrada in registro)
+    print("Despesa total:", total)
+
+def receita_total():
+    total = sum(entrada["receita"] for entrada in registro)
+    print("Receita total:", total)
+
+def caso_maior_despesa():
+    caso = max(registro, key=lambda x: x["despesa"])
+    print(f"Nome do cliente: {caso['nome']}, Caso: {caso['caso']}, Receita: {caso['receita']}, Despesa: {caso['despesa']}")
+
+def caso_maior_receita():
+    caso = max(registro, key=lambda x: x["receita"])
+    print(f"Nome do cliente: {caso['nome']}, Caso: {caso['caso']}, Receita: {caso['receita']}, Despesa: {caso['despesa']}")
+
+def salvar_detalhes_cliente(nome_completo):
+    with open(f"{nome_completo}.txt", "w") as file:
+        total_receita = 0
+        total_despesa = 0
+        for entrada in registro:
+            if entrada["nome"].lower() == nome_completo.lower():
+                file.write(f"Caso: {entrada['caso']}, Receita: {entrada['receita']}, Despesa: {entrada['despesa']}\n")
+                total_receita += entrada["receita"]
+                total_despesa += entrada["despesa"]
+        file.write(f"Total Receita: {total_receita}, Total Despesa: {total_despesa}, Diferença: {total_receita - total_despesa}")
+
+def menu():
+    while True:
+        print("\nMenu:")
+        print("a. Listar clientes por nome")
+        print("b. Listar casos por cliente")
+        print("c. Detalhes de um caso")
+        print("d. Despesa total")
+        print("e. Receita total")
+        print("f. Caso com maior despesa")
+        print("g. Caso com maior receita")
+        print("h. Salvar detalhes do cliente")
+        print("i. Sair")
+        
+        opcao = input("Escolha uma opção: ")
+        
+        if opcao == 'a':
+            nome_parte = input("Digite parte do nome do cliente: ")
+            listar_clientes_por_nome(nome_parte)
+        elif opcao == 'b':
+            nome_completo = input("Digite o nome completo do cliente: ")
+            casos_por_cliente(nome_completo)
+        elif opcao == 'c':
+            numero_caso = int(input("Digite o número do caso: "))
+            detalhes_caso(numero_caso)
+        elif opcao == 'd':
+            despesa_total()
+        elif opcao == 'e':
+            receita_total()
+        elif opcao == 'f':
+            caso_maior_despesa()
+        elif opcao == 'g':
+            caso_maior_receita()
+        elif opcao == 'h':
+            nome_completo = input("Digite o nome completo do cliente: ")
+            salvar_detalhes_cliente(nome_completo)
+        elif opcao == 'i':
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+if _name_ == "_main_":
+    menu()
